@@ -85,7 +85,7 @@ function unite_setup() {
 endif; // unite_setup
 add_action( 'after_setup_theme', 'unite_setup' );
 
-
+add_filter( 'widget_text', 'do_shortcode', 11 );
 if ( ! function_exists( 'unite_widgets_init' ) ) :
 /**
  * Register widgetized area and update sidebar with default widgets.
@@ -131,6 +131,7 @@ function unite_widgets_init() {
 
     register_widget( 'unite_popular_posts_widget' );
     register_widget( 'unite_social_widget' );
+    
 }
 endif;
 add_action( 'widgets_init', 'unite_widgets_init' );
