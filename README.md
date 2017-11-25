@@ -1,2 +1,2 @@
-# wordpress-test
-This is a test wordpress from codeline.
+# wp-test
+This is a test wordpress for codeline.
